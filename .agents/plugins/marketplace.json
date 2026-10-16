@@ -1,0 +1,7 @@
+{
+  "name": "harnessim",
+  "interface": { "displayName": "HarnessIM" },
+  "plugins": [
+    { "name": "harnessim", "source": { "source": "local", "path": "./plugins/harnessim" } }
+  ]
+}

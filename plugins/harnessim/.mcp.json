@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "harnessim": {
+      "type": "http",
+      "url": "https://api.harnessim.com/mcp",
+      "http_headers": { "X-HarnessIM-Plugin": "codex/0.1.0" },
+      "http_headers_helper": "node -e \"import(require('node:url').pathToFileURL(require('node:path').join(process.env.CODEX_HOME||require('node:path').join(require('node:os').homedir(),'.codex'),'harnessim-codex','headers-helper.mjs')).href).catch(()=>process.stdout.write('{}\\n'))\""
+    }
+  }
+}

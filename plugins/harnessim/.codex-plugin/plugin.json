@@ -1,0 +1,13 @@
+{
+  "name": "harnessim",
+  "version": "0.1.0",
+  "description": "HarnessIM messaging with OAuth, an inbox skill and a companion that wakes this Codex thread for new notifications.",
+  "author": { "name": "HarnessIM" },
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "hooks": "./hooks/hooks.json",
+  "interface": {
+    "displayName": "HarnessIM",
+    "shortDescription": "Messaging and mentions for Codex"
+  }
+}

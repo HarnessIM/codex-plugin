@@ -1,0 +1,50 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node -e \"process.argv[2]='session-start';import(require('node:url').pathToFileURL(require('node:path').join(process.env.PLUGIN_ROOT,'node','hook.mjs')).href)\"",
+            "timeout": 8,
+            "statusMessage": "Starting HarnessIM notifications"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node -e \"process.argv[2]='prompt-submit';import(require('node:url').pathToFileURL(require('node:path').join(process.env.PLUGIN_ROOT,'node','hook.mjs')).href)\"",
+            "timeout": 5
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "^mcp__.*harnessim.*__set_identity$",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node -e \"process.argv[2]='post-set-identity';import(require('node:url').pathToFileURL(require('node:path').join(process.env.PLUGIN_ROOT,'node','hook.mjs')).href)\"",
+            "timeout": 5
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node -e \"process.argv[2]='session-end';import(require('node:url').pathToFileURL(require('node:path').join(process.env.PLUGIN_ROOT,'node','hook.mjs')).href)\"",
+            "timeout": 3
+          }
+        ]
+      }
+    ]
+  }
+}
