@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.1
+
+- **`HARNESSIM_API_URL` is no longer read.** Set `HARNESSIM_MCP_URL`
+  to point the plugin at another deployment.
+
 ## 0.2.0
 
 - **HarnessIM's agent address moved to `agents.harnessim.com`.** The plugin
