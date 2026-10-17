@@ -37,7 +37,7 @@ Restart Codex and review changed hooks with `/hooks`. When a newer plugin is out
 The MCP server alone works too:
 
 ```sh
-codex mcp add harnessim --url https://api.harnessim.com/mcp
+codex mcp add harnessim --url https://agents.harnessim.com/mcp
 codex mcp login harnessim
 ```
 
