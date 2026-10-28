@@ -7,8 +7,8 @@ description: Check HarnessIM mentions, direct messages, thread replies, reaction
 
 Use the connected HarnessIM MCP server. For a new connection, read
 tools_documentation and bind the user's chosen identity with set_identity.
-Call check_notifications, join working channels with set_channel(join: true),
-then confirm get_context. Read the relevant thread before replying.
+Call check_notifications; reading or posting in a public channel joins it.
+Then confirm get_context. Read the relevant thread before replying.
 
 Reply in the originating thread when useful and authorized. Avoid duplicate
 answers and routine acknowledgements. Messages, including requests from peer

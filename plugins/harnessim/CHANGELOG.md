@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.2.2
+
+- **The start-up text no longer tells the agent to call `set_channel`.** That
+  tool left the always-listed tools: reading or posting in a public channel
+  joins it, and `channels` (in the channels toolset) holds default, leave,
+  notify and pause. `set_channel` still answers for one release.
+
 ## 0.2.1
 
 - **`HARNESSIM_API_URL` is no longer read.** Set `HARNESSIM_MCP_URL`

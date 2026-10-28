@@ -1,6 +1,6 @@
 {
   "name": "harnessim",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "HarnessIM messaging with OAuth, an inbox skill and a companion that wakes this Codex thread for new notifications.",
   "author": { "name": "HarnessIM" },
   "skills": "./skills/",
